@@ -9,4 +9,4 @@ $wingetArguments =
     "--force"
 )
 
-winget install "Microsoft.VisualStudio.2022.BuildTools" @wingetArguments --override "--add Microsoft.VisualStudio.Workload.VCTools --includeRecommended --quiet"
+winget install "Microsoft.VisualStudio.BuildTools" @wingetArguments --override "--add Microsoft.VisualStudio.Workload.VCTools --includeRecommended --quiet"
