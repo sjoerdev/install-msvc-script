@@ -14,6 +14,14 @@ $vsComponents = @(
     "Microsoft.VisualStudio.Component.Windows11SDK.26100"
 )
 
+# maybe replace:
+# "Microsoft.VisualStudio.Workload.VCTools"
+
+# with these:
+# "Microsoft.VisualStudio.Component.VC.CoreBuildTools"
+# "Microsoft.VisualStudio.Component.VC.CoreIde"
+# "Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core"
+
 $vsOverrideArgs = @(
     $vsComponents | foreach { "--add" $_ }
     "--quiet"
